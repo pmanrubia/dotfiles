@@ -1,4 +1,4 @@
 #!/bin/sh
 
 export SSH_KEY_PATH="~/.ssh/dsa_id"
-export EDITOR='vim'
+export EDITOR='atom'
