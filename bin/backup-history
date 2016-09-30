@@ -1,0 +1,4 @@
+#!/bin/sh
+
+currentDate=$(date +"%Y_%m_%d")
+cp ~/.zsh_history ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/history/history-$currentDate.txt
