@@ -6,6 +6,7 @@ alias glast='git log -1 HEAD'
 alias gunstage='git reset HEAD --'
 alias gd='git diff'
 alias gcleanup='git branch -d `git branch --merged | grep -v "^*" | grep -v "master" | tr -d "\n"`'
+alias gs='git status'
 
 # Unix
 alias l="gls -lAh --color"
