@@ -13,6 +13,7 @@ alias l="gls -lAh --color"
 alias ll="gls -l --color"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
+alias edot=" e ~/.dotfiles"
 alias v="$VISUAL"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
