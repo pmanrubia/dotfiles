@@ -4,6 +4,7 @@ tap 'Homebrew/bundle'
 tap 'homebrew/services'
 tap 'caskroom/homebrew-versions'
 
+tap 'caskroom/cask'
 cask 'firefox'
 cask 'rubymine'
 cask 'atom'
