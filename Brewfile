@@ -65,7 +65,6 @@ brew 'htop'
 brew 'hub'
 brew 'pandoc'
 brew 'lynx'
-brew 'zip'
 # brew 'mas'
 
 #brew install grc coreutils spark
