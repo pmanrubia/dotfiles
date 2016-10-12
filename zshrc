@@ -10,7 +10,7 @@ plugins=(git autojump brew bundler colored-man-pages colorize rake rbenv ruby tm
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/.custom/env
-source ~/.custom/alias
-source ~/.custom/paths
-source ~/.custom/rbenv
+source ~/config/env
+source ~/config/alias
+source ~/config/paths
+source ~/config/rbenv
