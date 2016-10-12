@@ -3,5 +3,4 @@ rmd () {
   pandoc $1 | lynx -dump -stdin
 }
 
-rmd ~/dotfiles/reference/$1.md
-
+rmd ~/.dotfiles/reference/$1.md
