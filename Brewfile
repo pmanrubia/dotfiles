@@ -1,10 +1,17 @@
 cask_args appdir: '/Applications'
 
 tap 'Homebrew/bundle'
+tap 'homebrew/core'
 tap 'homebrew/services'
-tap 'caskroom/homebrew-versions'
+tap 'homebrew/versions'
 
+tap 'caskroom/homebrew-versions'
 tap 'caskroom/cask'
+tap 'caskroom/versions'
+tap 'caskroom/fonts'
+
+tap 'thoughtbot/formulae'
+
 cask 'firefox'
 cask 'rubymine'
 cask 'atom'
