@@ -1,4 +1,7 @@
 #!/bin/sh
 
-currentDate=$(date +"%Y_%m_%d")
-cp ~/.zsh_history ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/history/history-$currentDate.txt
+sourceFile=~/.zsh_history
+targetFile=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/history/history-$(date +"%Y_%m_%d").txt
+
+echo "=> zsh_history backup: $targetFile"
+cp "$sourceFile" "$targetFile"
