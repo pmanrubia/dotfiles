@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo '>>>>> rcup -v'
+rcup -v
+
+echo '>>>>> Brew bundle'
+(cd ~/.dotfiles && brew bundle)
+
+echo '>>>>> Backups'
+backup-history
