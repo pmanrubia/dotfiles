@@ -6,7 +6,7 @@ CASE_SENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git autojump brew bundler colored-man-pages colorize rake rbenv ruby tmux zsh-navigation-tools)
+plugins=(git autojump brew bundler colored-man-pages colorize ruby tmux zsh-navigation-tools)
 
 source $ZSH/oh-my-zsh.sh
 
