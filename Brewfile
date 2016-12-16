@@ -35,6 +35,7 @@ cask 'pgadmin3'
 cask 'postgres'
 cask 'slack'
 cask 'spotify'
+cask 'balsamiq-mockups'
 
 brew 'autojump'
 brew 'git'
