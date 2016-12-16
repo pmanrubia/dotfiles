@@ -1,10 +1,10 @@
 #!/bin/sh
 
-echo '>>>>> rcup -v'
+echo '\n<<<<<<< rcup -v'
 rcup -v
 
-echo '>>>>> Brew bundle'
+echo '\n>>>>> Brew bundle'
 (cd ~/.dotfiles && brew bundle)
 
-echo '>>>>> Backups'
+echo '\n>>>>> Backups'
 backup-history
