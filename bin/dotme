@@ -10,3 +10,9 @@ echo '\n>>>>> Backups'
 backup-history
 backup-rubymine
 
+echo '\n<<<<<< Unpushed changes to GH'
+echo 'DOTFILES...'
+(cd ~/.dotfiles && PAGER=cat git diff origin/master..HEAD)
+
+echo 'ME...'
+(cd ~/work/me && PAGER=cat git diff origin/gh-pages..HEAD)
