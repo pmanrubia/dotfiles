@@ -16,3 +16,5 @@ echo 'DOTFILES...'
 
 echo 'ME...'
 (cd ~/work/me && PAGER=cat git diff origin/gh-pages..HEAD)
+
+cowsay 'Done!'
