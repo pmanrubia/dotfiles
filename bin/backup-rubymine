@@ -3,5 +3,5 @@
 sourceDir=~/.rubymine
 targetFile=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/rubymine/rubymine-$(date +"%Y_%m_%d_%H_%M_%S").zip
 
-echo "=> Rubymine backup: $targetFile"
+echo "=> Rubymine: $targetFile"
 zip -rTq "$targetFile" "$sourceDir"
