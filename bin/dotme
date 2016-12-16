@@ -12,12 +12,14 @@ backup-rubymine
 backup-me-drafts
 
 echo '\n<<<<<< Unpushed changes to GH'
-echo 'DOTFILES...'
-(cd ~/.dotfiles && git checkout master && PAGER=cat git diff origin/master..HEAD)
-(cd ~/.dotfiles && git checkout master && PAGER=cat git diff)
+echo 'DOTFILES'
+echo '============'
+(cd ~/.dotfiles && git checkout master && PAGER=cat git diff origin/master..HEAD && PAGER=cat git diff)
+echo '============'
 
 echo 'ME...'
-(cd ~/work/me && git checkout gh-pages && PAGER=cat git diff origin/gh-pages..HEAD)
-(cd ~/work/me && git checkout gh-pages && PAGER=cat git diff)
+echo '============'
+(cd ~/work/me && git checkout gh-pages && PAGER=cat git diff origin/gh-pages..HEAD && PAGER=cat git diff)
+echo '============'
 
 cowsay 'Done!'
