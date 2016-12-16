@@ -9,6 +9,7 @@ echo '\n>>>>> Brew bundle'
 echo '\n>>>>> Backups'
 backup-history
 backup-rubymine
+backup-me-drafts
 
 echo '\n<<<<<< Unpushed changes to GH'
 echo 'DOTFILES...'

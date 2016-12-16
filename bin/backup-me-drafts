@@ -1,0 +1,7 @@
+#!/bin/sh
+
+sourceDir=~/work/me/_drafts
+targetFile=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/me_drafts/me-drafts-$(date +"%Y_%m_%d_%H_%M_%S").zip
+
+echo "=> me-drafts: $targetFile"
+zip -rTq "$targetFile" "$sourceDir"
