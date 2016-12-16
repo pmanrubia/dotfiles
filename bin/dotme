@@ -13,9 +13,11 @@ backup-me-drafts
 
 echo '\n<<<<<< Unpushed changes to GH'
 echo 'DOTFILES...'
-(cd ~/.dotfiles && PAGER=cat git diff origin/master..HEAD)
+(cd ~/.dotfiles && git checkout master && PAGER=cat git diff origin/master..HEAD)
+(cd ~/.dotfiles && git checkout master && PAGER=cat git diff)
 
 echo 'ME...'
-(cd ~/work/me && PAGER=cat git diff origin/gh-pages..HEAD)
+(cd ~/work/me && git checkout gh-pages && PAGER=cat git diff origin/gh-pages..HEAD)
+(cd ~/work/me && git checkout gh-pages && PAGER=cat git diff)
 
 cowsay 'Done!'
