@@ -8,3 +8,5 @@ echo '\n>>>>> Brew bundle'
 
 echo '\n>>>>> Backups'
 backup-history
+backup-rubymine
+
