@@ -36,6 +36,7 @@ cask 'postgres'
 cask 'slack'
 cask 'spotify'
 cask 'balsamiq-mockups'
+cask 'livereload'
 
 brew 'autojump'
 brew 'git'
