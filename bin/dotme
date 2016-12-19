@@ -27,4 +27,6 @@ echo '============'
 (cd ~/work/me-toc && git checkout master && PAGER=cat git diff origin/master..HEAD && PAGER=cat git diff)
 echo '============'
 
+brew 'cleanup'
+
 cowsay 'Done!'
