@@ -37,6 +37,7 @@ cask 'slack'
 cask 'spotify'
 cask 'balsamiq-mockups'
 cask 'livereload'
+cask 'transmission'
 
 brew 'autojump'
 brew 'git'
