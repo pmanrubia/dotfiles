@@ -7,10 +7,6 @@
 
 - [Thoughtbot][1] for sharing [rcm][2]
 
-## License
-
-Released under the [MIT License](https://github.com/pmanrubia/dotfiles/blob/master/LICENSE).
-
 [1]: https://thoughtbot.com/
 [2]: https://github.com/thoughtbot/rcm
 [3]: http://thoughtbot.github.io/rcm/rcm.7.html
