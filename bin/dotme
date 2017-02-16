@@ -1,4 +1,6 @@
 #!/bin/sh
+echo '\nUpdaging Homebrew...'
+brew update
 
 echo '\n<<<<<<< rcup -v'
 rcup -v
