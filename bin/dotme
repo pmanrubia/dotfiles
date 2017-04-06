@@ -29,6 +29,12 @@ echo '============'
 (cd ~/work/me-toc && git checkout master && PAGER=cat git diff origin/master..HEAD && PAGER=cat git diff)
 echo '============'
 
+echo 'Installing gems'
+echo '============'
+gem install tmuxinator
+echo '============'
+
+
 brew 'cleanup'
 
 cowsay 'Done!'
