@@ -39,7 +39,7 @@ cask 'balsamiq-mockups'
 cask 'livereload'
 cask 'transmission'
 cask 'java'
-cask 'vagrant'
+# cask 'vagrant'
 
 brew 'autojump'
 brew 'git'
