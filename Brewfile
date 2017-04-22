@@ -74,3 +74,4 @@ mas 'Moom', id: 419330170
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'CopyClip', id: 595191960
+mas 'Marked 2' id: 890031187
