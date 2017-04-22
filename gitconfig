@@ -19,6 +19,7 @@
 [user]
 	name = Pablo Manrubia
 	email = pmanrubia@gmail.com
+	signingkey = FF9BA6C2
 [gui]
 	fontui = -family \".SF NS Text\" -size 17 -weight normal -slant roman -underline 0 -overstrike 0
 	fontdiff = -family Monaco -size 15 -weight normal -slant roman -underline 0 -overstrike 0
