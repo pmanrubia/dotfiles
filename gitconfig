@@ -24,3 +24,5 @@
 	fontui = -family \".SF NS Text\" -size 17 -weight normal -slant roman -underline 0 -overstrike 0
 	fontdiff = -family Monaco -size 15 -weight normal -slant roman -underline 0 -overstrike 0
 	commitmsgwidth = 72
+[merge]
+	summary = true
