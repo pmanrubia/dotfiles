@@ -4,6 +4,12 @@
   default = current
 [color]
   ui = auto
+[color "diff"]
+  meta = bold cyan
+[color "grep"]
+  filename = magenta
+  match = bold red
+  linenumber = bold blue
 [alias]
   branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
   st = status
@@ -12,6 +18,7 @@
   autocrlf = input
 [commit]
 	template = ~/.gitmessage
+  gpgsign = true
 [fetch]
   prune = true
 [include]
@@ -20,9 +27,9 @@
 	name = Pablo Manrubia
 	email = pmanrubia@gmail.com
 	signingkey = FF9BA6C2
-[gui]
-	fontui = -family \".SF NS Text\" -size 17 -weight normal -slant roman -underline 0 -overstrike 0
-	fontdiff = -family Monaco -size 15 -weight normal -slant roman -underline 0 -overstrike 0
-	commitmsgwidth = 72
 [merge]
 	summary = true
+[rebase]
+  autosquash = true
+[merge]
+  ff = only
