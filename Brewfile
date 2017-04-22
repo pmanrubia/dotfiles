@@ -62,6 +62,7 @@ brew 'gitup'
 brew 'pkg-config'
 brew 'mas'
 brew 'phantomjs'
+brew 'npm'
 brew 'git-extras'
 
 mas 'TaskPaper', id: 424281111
