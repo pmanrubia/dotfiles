@@ -61,6 +61,7 @@ brew 'gitup'
 brew 'pkg-config'
 brew 'mas'
 brew 'phantomjs'
+brew 'git-extras'
 
 mas 'TaskPaper', id: 424281111
 mas '1Password', id: 443987910
