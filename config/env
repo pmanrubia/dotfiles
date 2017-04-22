@@ -2,3 +2,4 @@
 
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 export EDITOR='vi'
+export VAGRANT_GOVUK_NFS=no
