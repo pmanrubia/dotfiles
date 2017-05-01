@@ -79,9 +79,10 @@ if executable('ag')
   endif
 endif
 
-" Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
+" Make it obvious where 72 characters is
+set textwidth=72
+let &colorcolumn="72"
+
 
 " Numbers
 set number
