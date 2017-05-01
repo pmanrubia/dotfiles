@@ -18,7 +18,7 @@
   autocrlf = input
 [commit]
 	template = ~/.gitmessage
-  gpgsign = true
+  gpgsign = false
 [fetch]
   prune = true
 [include]
