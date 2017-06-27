@@ -65,6 +65,8 @@ brew 'phantomjs'
 brew 'npm'
 brew 'git-extras'
 brew 'antigen'
+brew 'tree'
+brew 'python'
 
 mas 'TaskPaper', id: 424281111
 mas '1Password', id: 443987910
