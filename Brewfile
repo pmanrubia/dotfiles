@@ -40,7 +40,7 @@ cask 'livereload'
 cask 'transmission'
 cask 'java'
 cask 'gpgtools'
-# cask 'vagrant'
+cask 'vagrant'
 
 brew 'autojump'
 brew 'git'
