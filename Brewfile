@@ -67,6 +67,7 @@ brew 'git-extras'
 brew 'antigen'
 brew 'tree'
 brew 'python'
+brew 'mysql'
 
 mas 'TaskPaper', id: 424281111
 mas '1Password', id: 443987910
