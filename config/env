@@ -1,5 +1,5 @@
 #!/bin/sh
 
 export SSH_KEY_PATH="~/.ssh/dsa_id"
-export EDITOR='vi'
+export EDITOR='vim'
 export VAGRANT_GOVUK_NFS=no
