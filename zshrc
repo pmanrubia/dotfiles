@@ -14,3 +14,6 @@ source ~/config/env
 source ~/config/alias
 source ~/config/paths
 source ~/config/rbenv
+
+alias start="cd /Users/pmanrubia/work/govuk/govuk-puppet/development-vm && vagrant up"
+alias dev="ssh dev"
