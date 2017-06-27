@@ -31,4 +31,9 @@ alias tad='tmux attach -d -t'
 alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
+
 alias tkss='tmux kill-session -t'
+
+# GDS Vagrant and ENV
+alias start="cd ~/work/govuk/govuk-puppet/development-vm && vagrant up"
+alias dev="ssh dev"
