@@ -40,3 +40,8 @@ alias tkss='tmux kill-session -t'
 # GDS Vagrant and ENV
 alias start="cd ~/work/govuk/govuk-puppet/development-vm && vagrant up"
 alias dev="ssh dev"
+
+
+# quick shortcuts
+alias vm="cd ~/work/govuk/govuk-puppet/development-vm"
+alias cpm="cd ~/work/govuk/content-performance-manager"
