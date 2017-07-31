@@ -41,6 +41,7 @@ cask 'transmission'
 cask 'java'
 cask 'gpgtools'
 cask 'vagrant'
+cask 'docker'
 
 brew 'autojump'
 brew 'git'
