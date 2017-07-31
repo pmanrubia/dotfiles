@@ -30,6 +30,6 @@
 [merge]
 	summary = true
 [rebase]
-  autosquash = true
+	autosquash = true
 [merge]
   ff = only
