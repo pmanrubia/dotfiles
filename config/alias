@@ -8,6 +8,9 @@ alias gd='git diff'
 alias gcleanup='git branch -d `git branch --merged | grep -v "^*" | grep -v "master" | tr -d "\n"`'
 alias gs='git status'
 
+#fixes issues between Vagrant and Sierra
+alias perm="cd ~/work/govuk && ls -alR > /dev/null"
+
 # Unix
 alias l="gls -lAh --color"
 alias ll="gls -l --color"
