@@ -13,3 +13,4 @@ tmp/**/*
 *.pyc
 .idea
 bin/cx
+vim/plugged/**
