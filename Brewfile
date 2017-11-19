@@ -71,6 +71,7 @@ brew 'python'
 brew 'mysql'
 brew 'vim'
 brew 'chromedriver'
+brew 'pass'
 
 mas 'TaskPaper', id: 424281111
 mas '1Password', id: 443987910
