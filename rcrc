@@ -1,4 +1,4 @@
-EXCLUDES="README.md LICENSE Brewfile"
+EXCLUDES="README.md LICENSE Brewfile vim/plugged"
 DOTFILES_DIRS="$HOME/.dotfiles"
 UNDOTTED="bin reference config"
 SYMLINK_DIRS='tmuxinator vim'
