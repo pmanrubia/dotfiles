@@ -18,3 +18,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " NERDTree: start
 map <C-n> :NERDTreeToggle<CR>
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
