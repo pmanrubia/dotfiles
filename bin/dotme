@@ -35,6 +35,8 @@ gem install tmuxinator
 tmuxinator doctor
 echo '============'
 
+echo 'Updating VIM plugins'
+vim -u "$HOME"/.vimrc +PlugUpdate +qa
 
 brew 'cleanup'
 
