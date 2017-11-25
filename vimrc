@@ -4,10 +4,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
+Plug 'jlanzarotta/bufexplorer'
 call plug#end()
-
-" NERDTree: automatically when vim starts up
-autocmd vimenter * NERDTree
 
 " NERDTree: automatically when vim starts up on opening a directory
 autocmd StdinReadPre * let s:std_in=1
@@ -21,3 +19,10 @@ map <C-n> :NERDTreeToggle<CR>
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+set number
