@@ -12,6 +12,7 @@ echo '\n>>>>> Backups'
 backup-history
 backup-rubymine
 backup-me-drafts
+backup-ssh
 
 echo '\n<<<<<< Unpushed changes to GH'
 echo 'DOTFILES'
