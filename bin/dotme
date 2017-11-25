@@ -30,12 +30,6 @@ echo '============'
 (cd ~/work/me-toc && git checkout master && PAGER=cat git diff origin/master..HEAD && PAGER=cat git diff)
 echo '============'
 
-echo 'Installing gems'
-echo '============'
-gem install tmuxinator
-tmuxinator doctor
-echo '============'
-
 echo 'Updating VIM plugins'
 vim -u "$HOME"/.vimrc +PlugUpdate +qa
 
