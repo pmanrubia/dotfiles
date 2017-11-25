@@ -14,3 +14,5 @@ source ~/config/env
 source ~/config/alias
 source ~/config/paths
 source ~/config/rbenv
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
