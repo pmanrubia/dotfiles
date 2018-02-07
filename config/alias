@@ -44,3 +44,6 @@ alias dev="ssh dev"
 alias vm="cd ~/work/govuk/govuk-puppet/development-vm"
 alias cpm="cd ~/work/govuk/content-performance-manager"
 alias zd="cd ~/work/reloaded/zendone"
+
+# git log --pretty=short -u -L <<from>>,<<to>>:<<file name>>
+alias fc="git log --pretty=short -u -L"
