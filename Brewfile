@@ -41,6 +41,7 @@ cask 'java'
 cask 'gpgtools'
 cask 'vagrant'
 cask 'docker'
+cask 'postico'
 
 brew 'autojump'
 brew 'git'
