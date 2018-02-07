@@ -22,6 +22,7 @@ map <C-n> :NERDTreeToggle<CR>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_working_path_mode = 'ra'
 
 set expandtab
 set tabstop=2
