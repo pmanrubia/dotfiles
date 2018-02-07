@@ -34,5 +34,7 @@ echo 'Updating VIM plugins'
 vim -u "$HOME"/.vimrc +PlugUpdate +qa
 
 brew 'cleanup'
+brew 'prune'
+brew 'doctor'
 
 cowsay 'Done!'
