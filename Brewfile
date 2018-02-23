@@ -73,6 +73,7 @@ brew 'chromedriver'
 brew 'pass'
 brew 'awscli'
 brew 'automake'
+brew 'ctags'
 
 mas 'TaskPaper', id: 424281111
 mas '1Password', id: 443987910
