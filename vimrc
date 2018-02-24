@@ -9,6 +9,10 @@ Plug 'kien/ctrlp.vim'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'craigemery/vim-autotag'
 Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " NERDTree: automatically when vim starts up on opening a directory
