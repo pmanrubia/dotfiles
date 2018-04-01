@@ -7,6 +7,7 @@ alias gunstage='git reset HEAD --'
 alias gd='git diff'
 alias gcleanup='git branch -d `git branch --merged | grep -v "^*" | grep -v "master" | tr -d "\n"`'
 alias gs='git status'
+alias edot='cd ~/.dotfiles && vim ~/.dotfiles'
 
 #fixes issues between Vagrant and Sierra
 alias perm="cd ~/work/govuk && ls -alR > /dev/null"
@@ -16,7 +17,6 @@ alias l="gls -lAh --color"
 alias ll="gls -l --color"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
-alias edot="e ~/.dotfiles"
 alias eme="e ~/work/me"
 alias v="$VISUAL"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
