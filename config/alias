@@ -27,6 +27,8 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 # Bundler
 alias be="bundle exec"
 alias bi="bundle install"
+alias rdbm="bundle exec rake db:migrate"
+alias rdbmt="bundle exec rake db:migrate RAILS_ENV=test"
 
 # Bash
 alias path='echo $PATH | tr -s ":" "\n"'

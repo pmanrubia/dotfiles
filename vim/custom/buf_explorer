@@ -1,0 +1,2 @@
+" BufferExplorer: start 
+map <leader>be :BufExplorer<CR>
