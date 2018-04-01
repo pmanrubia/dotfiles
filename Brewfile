@@ -38,7 +38,7 @@ cask 'sourcetree'
 cask 'spotify'
 cask 'taskpaper'
 cask 'transmission'
-cask 'vagrant'
+# cask 'vagrant'
 cask 'vlc'
 cask 'whatsapp'
 

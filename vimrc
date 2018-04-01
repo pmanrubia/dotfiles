@@ -7,6 +7,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
@@ -19,11 +21,6 @@ call plug#end()
 
 let mapleader=","
 
-source ./vim/custom/nerdtree
-source ./vim/custom/buf_explorer
-source ./vim/custom/ctrlp
-source ./vim/custom/test
-
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -34,4 +31,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" configure Vim to watch for changes in your .vimrc and automatically reload the config.
+" https://superuser.com/questions/132029/how-do-you-reload-your-vimrc-file-without-restarting-vim
+augroup myvimrc
+    au!
+    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
 

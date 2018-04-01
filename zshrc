@@ -10,10 +10,10 @@ plugins=(git autojump brew bundler colored-man-pages colorize ruby tmux zsh-navi
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/config/env
-source ~/config/alias
-source ~/config/paths
-source ~/config/rbenv
+source ~/.config/env
+source ~/.config/alias
+source ~/.config/paths
+source ~/.config/rbenv
 
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
