@@ -95,8 +95,8 @@ let test#strategy = "dispatch"
 
 " Plugin: godlygeek/tabular
 " URL: https://github.com/godlygeek/tabular
-nmap <leader>a= :Tabularize /=<CR>
-vmap <leader>a= :Tabularize /=<CR>
-nmap <leader>a: :Tabularize /:\zs<CR>
-vmap <leader>a: :Tabularize /:\zs<CR>
+nmap <leader>t= :Tabularize /=<CR>
+vmap <leader>t= :Tabularize /=<CR>
+nmap <leader>t: :Tabularize /:\zs<CR>
+vmap <leader>t: :Tabularize /:\zs<CR>
 
