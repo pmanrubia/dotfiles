@@ -23,6 +23,8 @@
   prune = true
 [include]
   path = ~/.gitconfig.local
+[github]
+  user = pmanrubia
 [user]
 	name = Pablo Manrubia
 	email = pmanrubia@gmail.com
