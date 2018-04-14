@@ -11,6 +11,7 @@ alias _w='watch --color "git log -20 --decorate --oneline --color"'
 alias _t='rspec && bundle exec govuk-lint-ruby --format clang -al'
 alias _r='source ~/.zshrc'
 alias edot='cd ~/.dotfiles && vim ~/.dotfiles'
+alias ebrewvile='cd ~/.dotfiles && vim ~/.dotfiles/brewfile'
 
 #fixes issues between Vagrant and Sierra
 alias perm="cd ~/work/govuk && ls -alR > /dev/null"
