@@ -13,6 +13,7 @@ alias _r='source ~/.zshrc'
 alias edot='cd ~/.dotfiles && vim ~/.dotfiles'
 alias evimrc='cd ~/.dotfiles && vim ~/.dotfiles/vimrc'
 alias ebrewvile='cd ~/.dotfiles && vim ~/.dotfiles/brewfile'
+alias vc='cd ~/Documents/vc && vim'
 
 #fixes issues between Vagrant and Sierra
 alias perm="cd ~/work/govuk && ls -alR > /dev/null"
