@@ -1,6 +1,6 @@
 call plug#begin()
 Plug 'craigemery/vim-autotag'
-Plug 'jlanzarotta/jufexplorer'
+Plug 'jlanzarotta/bufexplorer'
 Plug 'kien/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
@@ -15,12 +15,12 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'elixir-editors/vim-elixir'
 Plug 'janko-m/vim-test'
 Plug 'vim-syntastic/syntastic'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 let mapleader=","
@@ -32,8 +32,8 @@ set clipboard=unnamed
 set number
 
 map <leader>s :w<CR>
-map <leader>a :wa<CR>
-map <leader>x :xa<CR>
+map <leader>sa :wa<CR>
+map <leader>sx :xa<CR>
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -53,12 +53,11 @@ augroup END
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
 
 " Plugin: BufferExplorer
-" URL: https:://github.com/jlanzarotta/jufexplorer
+" URL: https:://github.com/jlanzarotta/bufexplorer
 map <leader>be :BufExplorer<CR>
 
 
@@ -71,10 +70,9 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " Plugin: Vim-gist
 " Url: https://github.com/mattn/gist-vim
-let g:gist_clip_command    = 'pbcopy'
-let g:gist_detect_filetype = 1
-let g:gist_post_private    = 1
-let g:gist_show_privates   = 1
+let g:gist_clip_command  = 'pbcopy'
+let g:gist_post_private  = 1
+let g:gist_show_privates = 1
 
 
 " Plugin: ack
@@ -99,4 +97,18 @@ nmap <leader>t= :Tabularize /=<CR>
 vmap <leader>t= :Tabularize /=<CR>
 nmap <leader>t: :Tabularize /:\zs<CR>
 vmap <leader>t: :Tabularize /:\zs<CR>
+
+
+" Markdown 
+au BufRead,BufNewFile *.md setlocal textwidth = 80
+
+" Plugin: plasticboy/vim-markdown
+" URL: http://github.com/plasticboy/vim-markdown
+let g:vim_markdown_folding_disabled           = 1
+let g:markdown_fenced_languages               = ['css', 'javascript', 'ruby', 'bash = sh']
+let g:vim_markdown_follow_anchor              = 1
+let g:vim_markdown_new_list_item_indent       = 2
+let g:vim_markdown_no_extensions_in_markdown  = 1
+let g:vim_markdown_autowrite                  = 1
+let g:vim_markdown_toc_autofit                = 1
 
