@@ -22,9 +22,17 @@ Plug 'mattn/webapi-vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 let mapleader=","
+
+syntax enable
+set background=dark
+colorscheme solarized
 
 set expandtab
 set tabstop=2
@@ -33,8 +41,11 @@ set clipboard=unnamed
 set number
 
 map <leader>s :w<CR>
+map <leader>sc <leader>s<CR> :bd<CR>
 map <leader>sa :wa<CR>
 map <leader>sx :xa<CR>
+
+map <leader>fa ggVGgq``<CR>
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -43,10 +54,12 @@ nnoremap <C-H> <C-W><C-H>
 
 " configure Vim to watch for changes in your .vimrc and automatically reload the config.
 " https://superuser.com/questions/132029/how-do-you-reload-your-vimrc-file-without-restarting-vim
-augroup myvimrc
-    au!
-    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
-augroup END
+if has ('autocmd') " Remain compatible with earlier versions
+ augroup vimrc     " Source vim configuration upon save
+    autocmd! BufWritePost $MYVIMRC source % | echom "Reloaded " . $MYVIMRC | redraw
+    autocmd! BufWritePost $MYGVIMRC if has('gui_running') | so % | echom "Reloaded " . $MYGVIMRC | endif | redraw
+  augroup END
+endif " has autocmd
 
 
 " Plugin: NERDTree
@@ -71,6 +84,11 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " Plugin: Vim-gist
 " Url: https://github.com/mattn/gist-vim
+map <leader>gl :Gist -l<CR>
+map <leader>gd :Gist -d<CR>
+map <leader>ge :Gist -e<CR>
+map <leader>gb :Gist -b<CR>
+
 let g:gist_clip_command  = 'pbcopy'
 let g:gist_post_private  = 1
 let g:gist_show_privates = 1
@@ -92,6 +110,7 @@ nmap <silent> t<C-l> :TestLast<CR>    " t Ctrl+l
 nmap <silent> t<C-g> :TestVisit<CR>   " t Ctrl+g
 let test#strategy = "dispatch"
 
+
 " Plugin: godlygeek/tabular
 " URL: https://github.com/godlygeek/tabular
 nmap <leader>t= :Tabularize /=<CR>
@@ -101,7 +120,11 @@ vmap <leader>t: :Tabularize /:\zs<CR>
 
 
 " Markdown 
-au BufRead,BufNewFile *.md setlocal textwidth = 80
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" http://vimdoc.sourceforge.net/htmldoc/spell.html
+autocmd BufRead,BufNewFile *.md setlocal spell
+
 
 " Plugin: plasticboy/vim-markdown
 " URL: http://github.com/plasticboy/vim-markdown
