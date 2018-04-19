@@ -21,6 +21,7 @@ Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 let mapleader=","
@@ -112,3 +113,7 @@ let g:vim_markdown_no_extensions_in_markdown  = 1
 let g:vim_markdown_autowrite                  = 1
 let g:vim_markdown_toc_autofit                = 1
 
+" Plugin: junegunn/goyo.vim
+" URL: https://github.com/junegunn/goyo.vim
+nmap <leader>gs :Goyo<CR>
+nmap <leader>gq :Goyo!<CR>
