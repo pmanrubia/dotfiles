@@ -24,6 +24,7 @@ alias ll="gls -l --color"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias eme="e ~/work/me"
+alias vim=nvim
 alias v="$VISUAL"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 

@@ -26,12 +26,14 @@ Plug 'junegunn/limelight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
+Plug 'airblade/vim-gitgutter'
+Plug 'machakann/vim-highlightedyank'
+Plug 'nelstrom/vim-textobj-rubyblock'
 call plug#end()
 
 let mapleader=","
 
 syntax enable
-set background=dark
 colorscheme solarized
 
 set expandtab
@@ -39,6 +41,9 @@ set tabstop=2
 set shiftwidth=2
 set clipboard=unnamed
 set number
+set inccommand=nosplit
+set nohlsearch
+set background=dark
 
 map <leader>s :w<CR>
 map <leader>sc <leader>s<CR> :bd<CR>
@@ -140,3 +145,10 @@ let g:vim_markdown_toc_autofit                = 1
 " URL: https://github.com/junegunn/goyo.vim
 nmap <leader>gs :Goyo<CR>
 nmap <leader>gq :Goyo!<CR>
+
+
+" Plugin: airblade/vim-gitgutter
+" URL: http://github.com/vim-gitgutter
+nmap <leader>gg :GitGutterToggle<CR>
+nmap <leader>ggs :GitGutterLineHighlightsToggle<CR>
+
