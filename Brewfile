@@ -75,6 +75,7 @@ brew 'ruby-build'
 brew 'the_silver_searcher'
 brew 'tmux'
 brew 'tree'
+brew 'neovim'
 brew 'vim'
 
 mas '1Password', id: 443987910
