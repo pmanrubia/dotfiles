@@ -4,12 +4,14 @@ tap 'Homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'homebrew/versions'
+tap 'd12frosted/emacs-plus'
 
 tap 'caskroom/homebrew-versions'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
 tap 'thoughtbot/formulae'
+tap 'caskroom/fonts'
 
 cask 'alfred'
 cask 'atom'
@@ -19,6 +21,7 @@ cask 'docker'
 cask 'dropbox'
 cask 'evernote'
 cask 'firefox'
+cask 'font-source-code-pro'
 cask 'gitup'
 cask 'google-chrome'
 cask 'gpgtools'
@@ -38,9 +41,10 @@ cask 'sourcetree'
 cask 'spotify'
 cask 'taskpaper'
 cask 'transmission'
-# cask 'vagrant'
+cask 'vagrant'
 cask 'vlc'
 cask 'whatsapp'
+
 
 brew 'ack'
 brew 'antigen'
@@ -77,6 +81,10 @@ brew 'tmux'
 brew 'tree'
 brew 'neovim'
 brew 'vim'
+brew 'pv'
+brew 'emacs-plus', link: true
+
+
 
 mas '1Password', id: 443987910
 mas 'CopyClip', id: 595191960
