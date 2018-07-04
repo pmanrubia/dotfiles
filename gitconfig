@@ -16,6 +16,7 @@
 [core]
 	excludesfile = ~/.gitignore
   autocrlf = input
+	pager = less -F -X
 [commit]
 	template = ~/.gitmessage
 	gpgsign = true
