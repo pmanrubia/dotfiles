@@ -12,6 +12,7 @@ tap 'caskroom/fonts'
 
 tap 'thoughtbot/formulae'
 tap 'caskroom/fonts'
+tap 'caskroom/chromedriver'
 
 cask 'alfred'
 cask 'atom'
