@@ -12,8 +12,8 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.config/env
 source ~/.config/alias
-source ~/.config/paths
 source ~/.config/rbenv
+source ~/.config/customf
 
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
