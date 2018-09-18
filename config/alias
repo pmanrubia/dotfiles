@@ -14,6 +14,8 @@ alias edot='cd ~/.dotfiles && vim ~/.dotfiles'
 alias evimrc='cd ~/.dotfiles && vim ~/.dotfiles/vimrc'
 alias ebrewvile='cd ~/.dotfiles && vim ~/.dotfiles/brewfile'
 alias vc='cd ~/Documents/vc && vim'
+alias wh='cd ~/work/wonderhub'
+alias gca='git add . && git commit'
 
 #fixes issues between Vagrant and Sierra
 alias perm="cd ~/work/govuk && ls -alR > /dev/null"
@@ -59,5 +61,6 @@ alias gds_prod="ssh pablomanrubia@backend-1.backend.production"
 # quick shortcuts
 alias vm="cd ~/work/govuk/govuk-puppet/development-vm"
 alias cpm="cd ~/work/govuk/content-performance-manager"
+alias cda="cd ~/work/govuk/content-data-admin"
 alias zd="cd ~/work/reloaded/zendone"
 
