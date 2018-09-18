@@ -24,7 +24,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'altercation/vim-colors-solarized'
 Plug 'airblade/vim-gitgutter'
 Plug 'machakann/vim-highlightedyank'
 call plug#end()
@@ -32,7 +31,6 @@ call plug#end()
 let mapleader=","
 
 syntax enable                     " Enable syntax
-colorscheme solarized             " Use solarized colorscheme
 filetype on                       " Enable filetype detection
 filetype indent on                " Enable filetype-specific indenting
 filetype plugin on                " Enable filetype-specific plugins
