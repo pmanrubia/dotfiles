@@ -1,7 +1,7 @@
 #!/bin/sh
 
-sourceFile=~/.ssh/config
-targetFile=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/ssh/config-$(date +"%Y_%m_%d_%H_%M_%S")
+sourceDir=~/.ssh
+targetFile=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/ssh/ssh-$(date +"%Y_%m_%d_%H_%M_%S").tar.gz
 
-echo "=> zsh_history backup: $targetFile"
-cp "$sourceFile" "$targetFile"
+echo "=> SSH: $targetFile"
+tar cvf "$targetFile" "$sourceDir"
