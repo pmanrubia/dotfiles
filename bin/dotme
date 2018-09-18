@@ -1,16 +1,22 @@
 #!/bin/sh
+
+#install homebrew
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#Install Oh my zhshell
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo '\nUpdaging Homebrew...'
 brew update
-
-echo '\n<<<<<<< rcup -v'
-rcup -v
 
 echo '\n>>>>> Brew bundle'
 (cd ~/.dotfiles && brew bundle)
 
+echo '\n<<<<<<< rcup -v'
+rcup -v
+
 echo '\n>>>>> Backups'
 backup-history
-backup-rubymine
 backup-me-drafts
 backup-ssh
 backup-aws
