@@ -13,6 +13,7 @@ backup-history
 backup-rubymine
 backup-me-drafts
 backup-ssh
+backup-aws
 
 echo '\n<<<<<< Unpushed changes to GH'
 echo 'DOTFILES'

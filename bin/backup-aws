@@ -1,0 +1,13 @@
+#!/bin/sh
+
+sourceFile=~/.aws/config
+targetFile=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/aws/config-$(date +"%Y_%m_%d_%H_%M_%S")
+
+echo "=> zsh_history backup: $targetFile"
+cp "$sourceFile" "$targetFile"
+
+sourceFile=~/.aws/credentials
+targetFile=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/aws/credentials-$(date +"%Y_%m_%d_%H_%M_%S")
+
+echo "=> zsh_history backup: $targetFile"
+cp "$sourceFile" "$targetFile"
