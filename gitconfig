@@ -14,13 +14,13 @@
   branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
   st = status
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
   autocrlf = input
-	pager = less -F -X
+  pager = less -F -X
 [commit]
-	template = ~/.gitmessage
-	gpgsign = true
-	verbose = true
+  template = ~/.gitmessage
+  gpgsign = true
+  verbose = true
 [fetch]
   prune = true
 [include]
@@ -28,12 +28,12 @@
 [github]
   user = pmanrubia
 [user]
-	name = Pablo Manrubia
-	email = pmanrubia@gmail.com
-	signingkey = FF9BA6C2
+  name = Pablo Manrubia
+  email = pmanrubia@gmail.com
+  signingkey = FF9BA6C2
 [merge]
-	summary = true
+  summary = true
 [rebase]
-	autosquash = true
+  autosquash = true
 [merge]
   ff = only
