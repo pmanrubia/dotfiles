@@ -39,6 +39,7 @@ cask 'spotify'
 cask 'taskpaper'
 cask 'transmission'
 cask 'vagrant'
+cask 'virtualbox'
 cask 'vlc'
 cask 'whatsapp'
 
@@ -81,6 +82,7 @@ brew 'neovim'
 brew 'vim'
 brew 'pv'
 brew 'emacs-plus', link: true
+brew 'yarn'
 brew 'zsh'
 brew 'zsh-completions'
 
