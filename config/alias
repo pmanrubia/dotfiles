@@ -49,7 +49,7 @@ alias tkss='tmux kill-session -t'
 
 # GDS Vagrant and ENV
 alias start="cd ~/work/govuk/govuk-puppet/development-vm && vagrant up"
-alias dev="ssh dev"
+alias dev="vm && vagrant ssh"
 # alias rabbit.inte="ssh $(ssh jumpbox.integration govuk_node_list --single-node -c rabbitmq).aws.integration -N -L 15672:localhost:15672"
 alias rabbit.stag="ssh pablomanrubia@rabbitmq-1.backend.staging -L 15672:127.0.0.1:15672"
 alias rabbit.prod="ssh pablomanrubia@rabbitmq-1.backend.production -L 15672:127.0.0.1:15672"
