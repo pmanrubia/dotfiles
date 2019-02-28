@@ -33,3 +33,4 @@ source ~/.config/alias
 source ~/.config/rbenv
 source ~/.config/customf
 
+export GPG_TTY=$(tty)
