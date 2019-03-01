@@ -85,6 +85,7 @@ brew 'emacs-plus', link: true
 brew 'yarn'
 brew 'zsh'
 brew 'zsh-completions'
+brew 'graphviz'
 
 
 mas '1Password', id: 443987910
