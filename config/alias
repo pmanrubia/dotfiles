@@ -3,22 +3,17 @@
 # git (in addition to https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh)
 alias gundo='git reset --soft HEAD^'
 alias glast='git log -1 HEAD'
-alias gunstage='git reset HEAD --'
 alias gd='git diff'
-alias gcleanup='git branch -d `git branch --merged | grep -v "^*" | grep -v "master" | tr -d "\n"`'
+alias gcleanup='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias gs='git status'
-alias _w='watch --color "git log -20 --decorate --oneline --color"'
-alias _t='rspec && bundle exec govuk-lint-ruby --format clang -al'
+alias tt='rspec'
 alias _r='source ~/.zshrc'
-alias edot='cd ~/.dotfiles && vim ~/.dotfiles'
-alias evimrc='cd ~/.dotfiles && vim ~/.dotfiles/vimrc'
-alias ebrewvile='cd ~/.dotfiles && vim ~/.dotfiles/brewfile'
-alias vc='cd ~/Documents/vc && vim'
-alias wh='cd ~/work/wonderhub'
-alias gca='git add . && git commit'
-
-#fixes issues between Vagrant and Sierra
-alias perm="cd ~/work/govuk && ls -alR > /dev/null"
+alias edot='atom ~/.dotfiles'
+alias dbdrop='be rails db:drop RAILS_ENV=development; be rails db:drop RAILS_ENV=test'
+alias dbm='be rails db:environment:set RAILS_ENV=development; be rails db:create; be rails db:migrate'
+alias dbmt='be rails db:environment:set RAILS_ENV=test; be rails db:create RAILS_ENV=test; be rails db:migrate RAILS_ENV=test'
+alias rr='bundle exec rubocop -a'
+alias gbs='git for-each-ref --sort=-committerdate refs/heads/'
 
 # Unix
 alias l="gls -lAh --color"
@@ -63,4 +58,3 @@ alias vm="cd ~/work/govuk/govuk-puppet/development-vm"
 alias cpm="cd ~/work/govuk/content-performance-manager"
 alias cda="cd ~/work/govuk/content-data-admin"
 alias zd="cd ~/work/reloaded/zendone"
-
