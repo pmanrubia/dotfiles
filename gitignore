@@ -14,3 +14,7 @@ tmp/**/*
 .idea
 bin/cx
 vim/plugged/**
+*.org_archive
+*.org
+.generators
+.rakeTasks
