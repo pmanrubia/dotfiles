@@ -1,0 +1,7 @@
+#!/bin/sh
+
+sourceDir=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/org
+targetFile=~/Library/Mobile\ Documents/com\~apple\~CloudDocs/backups/orgmode/orgmode-$(date +"%Y_%m_%d_%H_%M_%S").tar.gz
+
+echo "=> AWS: $targetFile"
+tar cvf "$targetFile" "$sourceDir"
