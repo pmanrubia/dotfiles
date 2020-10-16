@@ -18,3 +18,5 @@ vim/plugged/**
 *.org
 .generators
 .rakeTasks
+config/credentials/*.key
+config/credentials.key

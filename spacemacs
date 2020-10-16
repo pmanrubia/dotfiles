@@ -392,6 +392,9 @@ you should place your code here."
 (setq-default js2-basic-offset 2
               js-indent-level 2)
 
+(setq split-width-threshold 0)
+(setq split-height-threshold nil)
+
 ; It needs minor mode  orgtbl-mode
 (defun orgtbl-to-gfm (table params)
   "Convert the Orgtbl mode TABLE to GitHub Flavored Markdown."
@@ -411,3 +414,15 @@ you should place your code here."
 (add-hook 'elixir-mode-hook
           (lambda () (add-hook 'before-save-hook 'elixir-format nil t)))
 
+;; Spell-check
+(require 'flyspell)
+(setq flyspell-issue-message-flag nil
+      ispell-local-dictionary "en_GB"
+      ispell-program-name "aspell"
+      ispell-extra-args '("--sug-mode=ultra"))
+
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+
+(setq-default dotspacemacs-configuration-layers
+              '((syntax-checking :variables syntax-checking-enable-by-default nil)))

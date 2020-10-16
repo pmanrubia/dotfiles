@@ -1,6 +1,8 @@
 set surround
 set commentary
-
+set esymotion
+set textobj-entire
+set argtextobj
 set multiple-cursors
 map <C-N>  <A-N>
 map <C-P>  <A-P>

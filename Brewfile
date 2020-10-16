@@ -86,6 +86,7 @@ brew 'yarn'
 brew 'zsh'
 brew 'zsh-completions'
 brew 'graphviz'
+brew 'aspell'
 
 
 mas '1Password', id: 443987910

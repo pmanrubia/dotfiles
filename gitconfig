@@ -37,3 +37,5 @@
   autosquash = true
 [merge]
   ff = only
+[hub]
+	protocol = https
