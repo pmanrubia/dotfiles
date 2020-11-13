@@ -6,13 +6,9 @@ alias glast='git log -1 HEAD'
 alias gd='git diff'
 alias gcleanup='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias gs='git status'
-alias tt='rspec'
 alias _r='source ~/.zshrc'
 alias edot='atom ~/.dotfiles'
-alias dbdrop='be rails db:drop RAILS_ENV=development; be rails db:drop RAILS_ENV=test'
-alias dbm='be rails db:environment:set RAILS_ENV=development; be rails db:create; be rails db:migrate'
-alias dbmt='be rails db:environment:set RAILS_ENV=test; be rails db:create RAILS_ENV=test; be rails db:migrate RAILS_ENV=test'
-alias rr='bundle exec rubocop -a'
+alias rr='bundle exec rubocop -A'
 alias gbs='git for-each-ref --sort=-committerdate refs/heads/'
 
 # Unix
@@ -28,33 +24,6 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 # Bundler
 alias be="bundle exec"
 alias bi="bundle install"
-alias rdbm="bundle exec rake db:migrate"
-alias rdbmt="bundle exec rake db:migrate RAILS_ENV=test"
 
 # Bash
-alias path='echo $PATH | tr -s ":" "\n"'
 alias reload!='. ~/.zshrc'
-
-#tmuxalias ta='tmux attach -t'
-alias tad='tmux attach -d -t'
-alias ts='tmux new-session -s'
-alias tl='tmux list-sessions'
-alias tksv='tmux kill-server'
-alias tkss='tmux kill-session -t'
-
-# GDS Vagrant and ENV
-alias start="cd ~/work/govuk/govuk-puppet/development-vm && vagrant up"
-alias dev="ssh dev"
-# alias rabbit.inte="ssh $(ssh jumpbox.integration govuk_node_list --single-node -c rabbitmq).aws.integration -N -L 15672:localhost:15672"
-alias rabbit.stag="ssh pablomanrubia@rabbitmq-1.backend.staging -L 15672:127.0.0.1:15672"
-alias rabbit.prod="ssh pablomanrubia@rabbitmq-1.backend.production -L 15672:127.0.0.1:15672"
-alias gds_inte="ssh \$(ssh jumpbox.integration govuk_node_list --single-node -c backend).aws.integration"
-alias gds_stag="ssh pablomanrubia@backend-1.backend.staging"
-alias gds_prod="ssh pablomanrubia@backend-1.backend.production"
-
-
-# quick shortcuts
-alias vm="cd ~/work/govuk/govuk-puppet/development-vm"
-alias cpm="cd ~/work/govuk/content-performance-manager"
-alias cda="cd ~/work/govuk/content-data-admin"
-alias zd="cd ~/work/reloaded/zendone"

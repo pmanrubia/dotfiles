@@ -15,7 +15,7 @@
   st = status
 [core]
   excludesfile = ~/.gitignore
-  autocrlf = input
+	autocrlf = true
   pager = less -F -X
 [commit]
   template = ~/.gitmessage
@@ -26,7 +26,7 @@
 [include]
   path = ~/.gitconfig.local
 [github]
-  user = pmanrubia
+	user = pmanrubia
 [user]
   name = Pablo Manrubia
   email = pmanrubia@gmail.com
